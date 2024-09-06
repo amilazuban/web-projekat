@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gamer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <a href="#" class="logo">The Gamer</a>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#games">Games and giftcards</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBar">
+                <a href="#"><i class='bx bx-search-alt'></i></a>
+                <input type="text" id="searchInput" placeholder="Search games" oninput="searchGames()">
+            </div>
+            </div>
+    </header>
+    <!--Home banner-->
+    <div class="banner animeX" id="home">
+        <div class="bg">
+            <div class="content">
+                <h2>Every game <br> is a story.</h2>
+                <p><b>Uncover sought-after games, delve into different genres, pre-order your future adventures, and learn more about us - your source for gaming passion.</b></p>
+                <a href="https://store.steampowered.com" class="btn" target=”_blank”>Join now!</a>
+            </div>
+            <img src="ctrl.png" alt="">
+        </div>
+    </div>
+    <!--About-->
+    <div class="about animeX" id="about-us">
+        <div class="contentBx">
+            <h2>About us</h2>
+            <p><b>At Gamer, we are more than just enthusiasts; we are storytellers in the realm of pixels and polygons. With a shared passion for gaming, we curate the most sought-after titles and explore diverse genres to bring you a gaming experience like no other. Our mission is to connect players with their next great adventure, offering a space where every game is a unique story waiting to be told. Join us in this exciting journey through the digital landscapes, where the love for games transcends boundaries. Welcome to Gamer – where every click unlocks a new level of gaming magic.</b></p>
+            <!--<a href="#" target=”_blank”>Read more!</a>-->
+        </div>
+        <img src="headsetneon.png" alt="">
+    </div>
+    <!-- Games and giftcards -->
+    <div class="games animeX" id="games">
+        <h2>Games and giftcards</h2>
+        <ul>
+            <li class="list active" data-filter="most-popular" id="most-popular">Most popular</li>
+            <li class="list" data-filter="genres">Genres</li>
+            <li class="list" data-filter="preorder">Pre-order</li>
+            <li class="list" data-filter="giftcards">Giftcards</li>
+        </ul>
+        <!-- Most popular -->
+        <div class="cardbx">
+            <div class="card" data-item="most-popular">
+                <img src="tarkov.jpg" alt="">
+                <div class="content">
+                    <h4>Escape From Tarkov</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing <br> <span>39€</span></p>
+                        <a href="https://www.escapefromtarkov.com/preorder-page" target=”_blank”>Play now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="most-popular">
+                <img src="gtav.jpg" alt="">
+                <div class="content">
+                    <h4>Grand Theft Auto V</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing <br> <span>29.99€</span></p>
+                        <a href="https://store.rockstargames.com/game/buy-gta-v?_gl=1*1po8281*_ga*MTAxMDA2NTA1Ni4xNzAzMDEzMTc1*_ga_PJQ2JYZDQC*MTcwNDU1NjM5Mi4zLjEuMTcwNDU1NjQwNS4wLjAuMA.." target=”_blank”>Play now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="most-popular">
+                <img src="rdr2.jpg" alt="">
+                <div class="content">
+                    <h4>Red Dead Redemption 2</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing <br> <span>59.99€</span></p>
+                        <a href="https://store.rockstargames.com/game/buy-red-dead-redemption-2?_gl=1*1wddlzv*_ga*MTAxMDA2NTA1Ni4xNzAzMDEzMTc1*_ga_PJQ2JYZDQC*MTcwNDU1NjM5Mi4zLjEuMTcwNDU1NjYxMS4wLjAuMA.." target=”_blank”>Play now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="most-popular">
+                <img src="gow.jpg" alt="">
+                <div class="content">
+                    <h4>God of War</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing <br> <span>49.99€</span></p>
+                        <a href="https://store.steampowered.com/app/1593500/God_of_War/" target=”_blank”>Play now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="most-popular">
+                <img src="lol.jpg" alt="">
+                <div class="content">
+                    <h4>League of Legends</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing <br> <span>Free</span></p>
+                        <a href="https://signup.leagueoflegends.com/en-gb/signup/index#/" target=”_blank”>Play now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="most-popular">
+                <img src="forza.jpg" alt="">
+                <div class="content">
+                    <h4>Forza Horizon 5</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing <br> <span>59.99€</span></p>
+                        <a href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/" target=”_blank”>Play now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Genres -->
+            <div class="card" data-item="genres">
+                <img src="wz.jpg" alt="">
+                <div class="content">
+                    <h4>Free to play</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://store.steampowered.com/genre/Free%20to%20Play/" target=”_blank”>Search for games</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="genres">
+                <img src="pubg.jpg" alt="">
+                <div class="content">
+                    <h4>Action</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://store.steampowered.com/tags/en/Action/" target=”_blank”>Search for games</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="genres">
+                <img src="hl.jpg" alt="">
+                <div class="content">
+                    <h4>Adventure</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://store.steampowered.com/tags/en/Adventure/" target=”_blank”>Search for games</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="genres">
+                <img src="sot.jpg" alt="">
+                <div class="content">
+                    <h4>Massively Multiplayer</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://store.steampowered.com/tags/en/Massively%20Multiplayer/" target=”_blank”>Search for games</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="genres">
+                <img src="ets2.jpg" alt="">
+                <div class="content">
+                    <h4>Simulation</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://store.steampowered.com/tags/en/Simulation/" target=”_blank”>Search for games</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="genres">
+                <img src="fm.jpg" alt="">
+                <div class="content">
+                    <h4>Strategy</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://store.steampowered.com/tags/en/Strategy/" target=”_blank”>Search for games</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pre-order -->
+            <div class="card" data-item="preorder">
+                <img src="ssquad.jpg" alt="">
+                <div class="content">
+                    <h4>Suicide Squad: Kill the Justice League</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://www.suicidesquadgame.com/en-us/purchase" target=”_blank”>Pre-order now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="preorder">
+                <img src="ff.jpg" alt="">
+                <div class="content">
+                    <h4>Final Fantasy VII Rebirth</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://na.store.square-enix-games.com/final-fantasy-vii-rebirth" target=”_blank”>Pre-order now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="preorder">
+                <img src="pop.jpg" alt="">
+                <div class="content">
+                    <h4>Prince of Persia: The Lost Crown</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://www.ubisoft.com/en-gb/game/prince-of-persia/the-lost-crown" target=”_blank”>Pre-order now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="preorder">
+                <img src="tekken.jpg" alt="">
+                <div class="content">
+                    <h4>Tekken 8</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://en.bandainamcoent.eu/tekken/tekken-8" target=”_blank”>Pre-order now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="preorder">
+                <img src="d2.jpg" alt="">
+                <div class="content">
+                    <h4>Destiny 2: The Final Shape</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://store.steampowered.com/app/2336880/Destiny_2_The_Final_Shape/" target=”_blank”>Pre-order now!</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gift cards -->
+            <div class="card" data-item="giftcards">
+                <img src="digi.png" alt="">
+                <div class="content">
+                    <h4>Digital Steam giftcard</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://store.steampowered.com/digitalgiftcards/selectgiftcard" target=”_blank”>Buy gift card</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="giftcards">
+                <img src="psg.jpg" alt="">
+                <div class="content">
+                    <h4>PlayStation store giftcard</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://www.playstation.com/en-us/playstation-gift-cards/" target=”_blank”>Buy gift card</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="giftcards">
+                <img src="xbox.jpg" alt="">
+                <div class="content">
+                    <h4>Xbox digital giftcard</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <a href="https://www.microsoft.com/en-us/p/xbox-gift-card-digital-code/cfq7ttc0k63h?activetab=pivot:overviewtab" target=”_blank”>Buy gift card</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contact box -->
+    <div class="contact animeX" id="contact">
+        <img src="thegamer.png" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo">The Gamer</a>
+            <p><i class='bx bxs-copyright'></i>2024 All Rights Reserved</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/amila-zuban-415b6623a/" target=”_blank”><i class='bx bxl-linkedin-square' ></i>Zuban Amila</a></li>
+                <li><a href="https://www.linkedin.com/in/benjamin-usanovic-2a10a8120/" target=”_blank”><i class='bx bxl-linkedin-square' ></i>Ušanović Benjamin</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    
+    <script>
+                //  Animacije skrolanja
+        window.addEventListener('scroll', function(){
+            var anime = document.querySelectorAll('.animeX')
+            for (var s = 0; s < anime.length; s++){
+                var windowHeight = window.innerHeight;
+                var animeTop = anime[s].getBoundingClientRect().top;
+                var animePoint = 150;
+                if(animeTop < windowHeight - animePoint){
+                    anime[s].classList.add('active');
+                }
+                else{
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
+        // Filtriranje kartica
+        let list = document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+
+        for (let i = 0; i < list.length; i++){
+            list[i].addEventListener('click', function(){
+                for(let j = 0; j < list.length; j++){
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+                let dataFilter = this.getAttribute('data-filter');
+                for(let k = 0; k < card.length; k++){
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+                    if(card[k].getAttribute('data-item')==dataFilter||dataFilter=='all'){
+                        card[k].classList.remove('hide');
+                        card[k].classList.add('active');
+                    }
+                }
+
+            })
+        }
+         // Search bar
+        function searchGames() {
+            // Uzima input vrijednost i pretvara u lowercase za case-sensitive pretragu
+            var searchInput = document.getElementById('searchInput').value.toLowerCase();
+
+            // Uzima sve kartice
+            var cards = document.querySelectorAll('.card');
+
+            // Lista kroz svaku karticu
+            cards.forEach(function (card) {
+                // Uzima ime kartice i pretvara u lowercase
+                var title = card.querySelector('h4').innerText.toLowerCase();
+
+                // Provjerava je li input dostupan
+                if (title.includes(searchInput)) {
+                    // Ako je match, pokazuje karticu
+                    card.style.display = 'block';
+                } else {
+                    // Ako nije match sakriva karticu
+                    card.style.display = 'none';
+                }
+            });
+
+            // Sakriva ostale dijelove stranice da prikaze samo "games and giftcards" dio
+            var sections = document.querySelectorAll('.animeX:not(#games)');
+
+            // Prolazi kroz sve dijelove stranice osim "games and giftcards"
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+        }
+    </script>
+
+</body>
+</html>
